@@ -20,6 +20,10 @@ Below show the distribution of one feature per category as an example. For more 
 
 <img width="832" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/8ae186aa-99b8-4a54-a668-d20c55d93329">
 
+## Experiment setup
+Four experiments were set up to resolve this problem:
+
+<img width="472" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/ad2348b1-18db-4c60-b696-e7cfd5b2f8b5">
 
 ## Result
 This session shows the modeling result of Random Forest Model in 4 experiments. Experiment 4's model was chosen as the final model
