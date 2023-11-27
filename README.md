@@ -36,6 +36,11 @@ Experiment 1 best model's performance by categories can be found below. It can b
 
 <img width="490" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/9057edb7-8afd-48a1-948a-b4b052491a88">
 
+Plot of final model's ROC AUC performance per category
+
+Plot of final model's confusion matrix per category
+
+Plot of final model's clasiffication report per category
 
 ### With regrouping
 
@@ -51,4 +56,16 @@ Below table shows the best model's performance in Experiment 2, 3, 4 by categori
 
 <img width="471" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/72827b47-4b75-4363-9035-e651b2da0909">
 
+
+Plot of final model's ROC AUC performance per category
+<img width="705" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/671e505a-3765-427e-896f-e6e5a30cf00b">
+
+Plot of final model's confusion matrix per category
+<img width="793" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/47155522-69ef-4f7f-b699-1391b2d4412c">
+
+Plot of final model's clasiffication report per category
+<img width="732" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/0af641a5-cdc6-43f9-b8fa-1694e06a8b42">
+
+
+<img width="824" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/57c2601f-5bce-4eff-933f-4eec25989d67">
 
