@@ -16,7 +16,7 @@
 
 ### Features
 
-There are 11 features. All of them are numerical. No missing values are indentified. All features are used for modelling as the modelling experiments show that all features contribute to over 5% feature importance, this demostrated all of the features are important for the model to make prediction.
+There are 11 features. All of them are numerical. No missing values are indentified. All features are used for modelling as the modelling experiments show that all features contribute to over 5% feature importance, this demostrated all of the features are important for the model to make prediction. Previous study using PCA to do feature selection also proved that dropping feature would make the model performance drop. [2]
 
 Below shows the statistics of all the columns. The last column "quality" is the Target variable. All other columns are features.
 <img width="770" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/bdaffad4-811f-4aba-8150-2a284602cc2e">
@@ -77,3 +77,12 @@ Plot of final model's feature importance
 
 <img width="824" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/57c2601f-5bce-4eff-933f-4eec25989d67">
 
+## Reference
+[1] Hu, Gongzhu, et al. "Classification of wine quality with imbalanced data." 2016 IEEE International Conference on Industrial Technology (ICIT). IEEE, 2016.
+
+
+[2] Er, Yeşim, and Ayten Atasoy. "The classification of white wine and red wine according to their physicochemical qualities." International Journal of Intelligent Systems and Applications in Engineering 4.Special Issue-1 (2016): 23-26.
+
+[3] Cortez, Paulo, et al. "Modeling wine preferences by data mining from physicochemical properties." Decision support systems 47.4 (2009): 547-553.
+
+[4] Akiba, Takuya, et al. "Optuna: A next-generation hyperparameter optimization framework." Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining. 2019.
