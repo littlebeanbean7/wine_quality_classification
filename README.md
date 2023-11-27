@@ -16,6 +16,11 @@
 
 ### Features
 
+There are 11 features. All of them are numerical. No missing values are indentified. All features are used for modelling as the modelling experiments show that all features contribute to over 5% feature importance, this demostrated all of the features are important for the model to make prediction.
+
+Below shows the statistics of all the columns. The last column "quality" is the Target variable. All other columns are features.
+<img width="770" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/bdaffad4-811f-4aba-8150-2a284602cc2e">
+
 Below show the distribution of one feature per category as an example. For more plots please reference the notebook.
 
 <img width="832" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/8ae186aa-99b8-4a54-a668-d20c55d93329">
