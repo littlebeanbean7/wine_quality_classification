@@ -1,5 +1,7 @@
 # wine_quality_classification
 ## I. Abstract
+This research classifies wine’s quality with the objective to maximize the economic value for wine
+ry and merchandisers using machine learning technologies. An extremely imbalanced dataset containing the white wine’s quality was used. Wines with extremely good and poor qualities are extremely rare in the dataset. To predict the quality of wine using machine learning algorithms, a minimum amount of data samples are required. In this research,  a minimal grouping was conducted without the original ranking of the wine quality are maximizedly preserved. Then SMOTE oversampling techniques was used to treat the imbalance of the data. Multiple machine learning algorithms were experimented and Random forest with hyper parameters fine tuned by Optuna was found to be the best model which not only have good performance among all the wine quality classes (ROC 0.855) but also the rare classes (quality 3 and 4 have a ROC of 0.86, and quality 8 and 9 have a ROC of 0.92). As in real world, imbalance data are very common whereas the rare classes are usually more important and carries more commercial value. The solution proposed by this research, which preserved the importance of rare classes and utilized machine learning technologies, an be applied on other data and used in other industries.
 
 ## II. Video
 
