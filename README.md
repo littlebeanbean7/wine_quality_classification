@@ -1,4 +1,4 @@
-# Multiclass Classification of Imbalanced Wine Quality Data to Maximize Economic Value for Model Users
+# Multiclass Classification of Imbalanced Wine Quality Data that Maximize Economic Value for Model Users
 Lingling Zhang
 
 ## Abstract
