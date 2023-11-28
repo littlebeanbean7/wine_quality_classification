@@ -8,8 +8,10 @@ This research classifies white wines into multiple quality categories with the o
 An introduction of the project can be found here.
 
 ## Project Design
-1.  Exploratory Data Analysis was conducted. Imbalance nature of data was detected. Regrouped wines with quality 3 and 4 into one group; and wines with quality 8 and 9 into one group. 
-2. Oversampling was experimented and ROC AUC was used as the matrix for model selection so as to measure how well the model is classifying each class. Altogether four experiments were conducted:
+1.  Exploratory Data Analysis was conducted. The imbalance nature of data was detected. Recategorized wines from 7 quality classes in to 5 quality group classes - wines in quality classes 3 and 4 were grouped into “quality group 4” and wines in quality classes 8 and 9 were grouped into “quality group 8”.
+2. Model performance using data with and without regrouping and oversampling was experimented. ROC AUC was used as the evaluation matrix for model selection, with the aim of measuring how well the model is classifying each class. For the best model in each experiment, the model performance metrics (especially ROC and Recall) on each wine quality group were examined and compared.
+
+Altogether four experiments were conducted:
    
 - Experiment 1: without regrouping
 - Experiment 2: with regrouping but without oversampling using SMOTE
@@ -17,18 +19,18 @@ An introduction of the project can be found here.
 - Experiment 4: with regrouping and oversampling using SMOTE, use Optuna[4] for model tuning.
 
 ## Exploratory Data Analysis
-Dataset used in the project is the white wine data avaliable at the UC Irvine Machine Learning Repository [https://archive.ics.uci.edu/dataset/186/wine+quality]. There are 4898 data samples (white wine examples) in the data. For each wine, there are 11 physicochemical features of the wine. The Target variable was the quality of the wine, which as evaluated by a minimum of three sensory assessors , which graded the wine in a scale that ranges from 0 (very bad) to 10 (excellent). The final sensory score is given by the median of these evaluations.[3]
+Dataset used in the project is the white wine data available at the UC Irvine Machine Learning Repository [https://archive.ics.uci.edu/dataset/186/wine+quality]. There are 4,898 white wine data examples and 11 physicochemical features of the wine. The Target variable is the quality of the wine, which as evaluated by a minimum of three sensory assessors, which graded the wine in a scale that ranges from 0 (very bad) to 10 (excellent). The final sensory score is given by the median of these evaluations.[3]
 
 ### Imbalance of data
-It is found that the dataset is not balanced - wines with quliaty 3 and quality 9 are extremely rare. Wines with quliaty 4 and quality 8 are also not a lot.
+It is found that there are 7 quality classes for the white wines. The dataset is not balanced - wines with quality 3 and quality 9 are extremely rare. Wines with quality 4 and quality 8 are also not a lot. See Table 1.
 
-Table 1. The proportion of each categry in orignal data
+Table 1. The proportion of each category in original data
 
 <img width="189" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/53385ea1-b945-4ba8-9db2-9b43a074247c">
 
-Therefore I regroued wines with quality 3 and 4 into one group; and wines with quality 8 and 9 into one group. After the recategorizing, quality group "4" and "8" each have over 180 samples, which is worth to try modelling. This regrouping solution did not simply change this multiclass classification problem into a binary classification. It maximized the possibility to resume most categries. and it did not break the ranking sequence of the wines.
+Therefore I regrouped wines in quality classes 3 and 4 into “quality group 4” and wines in quality classes 8 and 9 into “ quality group 8”. After the recategorizing, quality groups “4” and “8” have over 180 samples each, which is worth to try modelling. Wines in quality classes 5, 6, and 7 remain as 3 separate classes (see Table 2). This regrouping solution did not simply change the multi-class classification problem into a binary classification or even regroup rare classes (wine in quality 3, 4, 8, and 9) into one group like [1] did. In contrast, this regrouping strategy preserved the most categories as well as the ranking sequence of the wines.
 
-Table 2. The proportion of each categry after regrouping
+Table 2. The proportion of each category after regrouping
 
 <img width="224" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/324bd782-1baf-4f78-9dd8-4f1781eb0e44">
 
