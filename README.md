@@ -55,7 +55,8 @@ Four experiments were conducted to compare whether certain procedures improve mo
 
 Table 4. Setup of the four experiments
 
-<img width="472" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/ad2348b1-18db-4c60-b696-e7cfd5b2f8b5">
+<img width="722" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/a8e5ca57-49af-427a-a523-a89756da8eb0">
+
 
 ## Result
 
@@ -73,7 +74,7 @@ Experiment 1 best model's performance by categories can be found in Table 6. It 
 
 Table 6. Experiment 1 best model's performance on test set by category
 
-<img width="490" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/9057edb7-8afd-48a1-948a-b4b052491a88">
+<img width="748" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/065a4572-1fc4-4a7a-aa30-b3c36f29309d">
 
 
 ### Experiment 2: Regrouping rare categories
@@ -102,7 +103,9 @@ Table 9 explains the different treatments among Experiments 2, 3, and 4 per wine
 
 Table 9. Experiment 2, 3, and 4 best models' performance on test set by categories
 
-<img width="471" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/72827b47-4b75-4363-9035-e651b2da0909">
+
+<img width="719" alt="image" src="https://github.com/littlebeanbean7/wine_quality_classification/assets/19282931/85f004a5-377a-40f5-8dbc-8a1b04623851">
+
 
 ### Model analyses for final model
 The final model was produced in Experiment 4 (it was the same model as the best model in Experiment 3) .  Figure 2 to Figure 5 show that the model is good at identifying wines with both top and poor quality groups. Note that in the figures:
