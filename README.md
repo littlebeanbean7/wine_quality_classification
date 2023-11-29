@@ -139,13 +139,13 @@ Figure 6. Plot of final model's feature importance
 
 ## Conclusion
 
+Machine learning projects should be designed in a way that is practical for real-world use cases. In this project, if we simply convert the problem into a binary classification problem after detecting the imbalance of data, the model’s performance could be very good, however the model would not be useful for model users.
+
 Imbalanced data is a very common problem in machine learning. It is essential to check the proportion of each category when resolving any classification problem. The choice of model evaluation method is also very important for any machine learning problem and should be carefully decided.
- 
-Even more importantly, machine learning projects should be designed in a way that are practical for real world use case. In this project, if we simply convert the problem into binary classification problem, or even combine the rare poor quality wines and good quality wines into classes like [1] did, the model’s performances could show to be very good, however the model would not be useful for model users. 
 
-Detecting the rare classes in an imbalanced data are often worth more value for model users. In our case, being able to detect and price top rating wines as well as preventing the poor quality wines to be mix with good or normal quality wines would have the greatest economic values to wineries and merchandiser. 
+Detecting the rare classes in an imbalanced data are often worth more value for model users. In our case, being able to detect and price top rating wines as well as preventing the poor quality wines from being mixed with other wines would have the greatest economic values to wineries and merchandisers.
 
-This project’s solution, from regrouping of categories, oversampling and choice of model evaluation matrix, has taken into account the model user’s biggest interest.
+This project’s solution, which included regrouping of categories while maximizedly preserving the original categories and ranking, oversampling and choice of proper model evaluation matrix, has taken into account the model user’s biggest interest.
 
 ## Reference
 [1] Hu, Gongzhu, et al. "Classification of wine quality with imbalanced data." 2016 IEEE International Conference on Industrial Technology (ICIT). IEEE, 2016.
